@@ -1,0 +1,42 @@
+table {
+  th,
+  td {
+    &.pending {
+      background-color: var(--color-bg-pending-op);
+    }
+    &.current {
+      background-color: var(--color-bg-current-op);
+    }
+    &.waitingApprovalCancel {
+      background-color: var(--color-bg-waitingApprovalCancel-op);
+    }
+    &.canceledBeforeApproval {
+      background-color: var(--color-bg-canceledBeforeApproval-op);
+    }
+    &.canceledAfterApproval {
+      background-color: var(--color-bg-canceledAfterApproval-op);
+    }
+    &.attended {
+      background-color: var(--color-bg-attended-op);
+    }
+    &.entered {
+      background-color: var(--color-bg-entered-op);
+    }
+    &.waitingReEntry {
+      background-color: var(--color-bg-waitingReEntry-op);
+    }
+    &.finished {
+      background-color: var(--color-bg-finished-op);
+    }
+  }
+}
+
+.cell-color {
+  color: #9f9f9f;
+  span {
+    background-color: var(--color-bg-main);
+    padding: 0.3em 0.5em;
+    border-radius: 3px;
+    color: initial;
+  }
+}

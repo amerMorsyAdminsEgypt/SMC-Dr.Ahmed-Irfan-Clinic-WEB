@@ -1,0 +1,112 @@
+.vuecal {
+  margin: auto;
+  // max-width: 1300px;
+  max-height: calc(100vh - var(--navbar-height) - var(--footer-height) - 2rem);
+
+  .vuecal__header {
+    .vuecal__arrow {
+      width: 25px;
+    }
+  }
+  .vuecal__body {
+    .vuecal__cell {
+      .vuecal__cell-content {
+        padding: 20px 0;
+        .vuecal__cell-events-count {
+          width: 20px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+        }
+      }
+      .vuecal__no-event {
+        color: #666;
+      }
+
+      .vuecal__event {
+        background-color: #023047;
+        color: #ffffff;
+        box-sizing: border-box;
+        border: 1px solid #fff;
+        padding: 5px;
+        cursor: pointer;
+        // &.lunch {
+        //   background: repeating-linear-gradient(
+        //     45deg,
+        //     transparent,
+        //     transparent 10px,
+        //     #f2f2f2 10px,
+        //     #f2f2f2 20px
+        //   );
+        // }
+      }
+
+      .vuecal__cell-split.pending {
+        background-color: var(--color-bg-pending-op);
+        .vuecal__event {
+          background-color: var(--color-bg-pending);
+        }
+      }
+      .vuecal__cell-split.current {
+        background-color: var(--color-bg-current-op);
+        .vuecal__event {
+          background-color: var(--color-bg-current);
+        }
+      }
+      .vuecal__cell-split.waitingApprovalCancel {
+        background-color: var(--color-bg-waitingApprovalCancel-op);
+        .vuecal__event {
+          background-color: var(--color-bg-waitingApprovalCancel);
+        }
+      }
+      .vuecal__cell-split.canceledBeforeApproval {
+        background-color: var(--color-bg-canceledBeforeApproval-op);
+        .vuecal__event {
+          background-color: var(--color-bg-canceledBeforeApproval);
+        }
+      }
+      .vuecal__cell-split.canceledAfterApproval {
+        background-color: var(--color-bg-canceledAfterApproval-op);
+        .vuecal__event {
+          background-color: var(--color-bg-canceledAfterApproval);
+        }
+      }
+      .vuecal__cell-split.attended {
+        background-color: var(--color-bg-attended-op);
+        .vuecal__event {
+          background-color: var(--color-bg-attended);
+        }
+      }
+      .vuecal__cell-split.entered {
+        background-color: var(--color-bg-entered-op);
+        .vuecal__event {
+          background-color: var(--color-bg-entered);
+        }
+      }
+      .vuecal__cell-split.waitingReEntry {
+        background-color: var(--color-bg-waitingReEntry-op);
+        .vuecal__event {
+          background-color: var(--color-bg-waitingReEntry);
+        }
+      }
+      .vuecal__cell-split.finished {
+        background-color: var(--color-bg-finished-op);
+        .vuecal__event {
+          background-color: var(--color-bg-finished);
+        }
+      }
+    }
+
+    .vuecal__time-cell-line.hours:before {
+      border-color: #42b983;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      margin: 0.6em 2em;
+    }
+  }
+}

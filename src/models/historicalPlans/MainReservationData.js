@@ -1,0 +1,111 @@
+export default class MainReservationData {
+  constructor() {
+    this.setInitialValue();
+  }
+  setInitialValue() {
+    this.reservationToken = "";
+    this.reservationCode = "";
+    this.clientToken = "";
+    this.clientNameCurrent = "";
+    this.clientCode = "";
+    this.clientBirthdate = "";
+    this.clientAgeCurrent = "";
+    this.clientPhone = "";
+    this.clientCountryCode = "";
+    this.clientPhoneWithCC = "";
+    this.clientImagePath = "";
+    this.insuranceCompanyToken = "";
+    this.insuranceCompanyNameCurrent = "";
+    this.branchToken = "";
+    this.branchNameCurrent = "";
+    this.employeeToken = "";
+    this.employeeNameCurrent = "";
+    this.employeeImagePath = "";
+    this.employeeCode = "";
+    this.employeeScientificDegreeToken = "";
+    this.scientificDegreeNameCurrent = "";
+    this.jobToken = "";
+    this.jobNameCurrent = "";
+    this.timeNameCurrent = "";
+    this.dayToken = "";
+    this.dayNameCurrent = "";
+    this.serviceTypeToken = "";
+    this.serviceTypeNameCurrent = "";
+    this.reservationDate = "";
+    this.serviceToken = "";
+    this.serviceNameCurrent = "";
+    this.serviceProvideTypeToken = "";
+    this.serviceProvideTypeNameCurrent = "";
+    this.generalSpecialtyToken = "";
+    this.generalSpecialtyNameCurrent = "";
+    this.specialSpecialtyToken = "";
+    this.specialSpecialtyNameCurrent = "";
+    this.branchFirstPhone = "";
+    this.branchFirstNumberCountryCodeName = "";
+    this.branchFirstNumberCountryCode = "";
+    this.branchFirstPhoneWithCC = "";
+    this.branchSecondPhone = "";
+    this.branchSecondNumberCountryCodeName = "";
+    this.branchSecondNumberCountryCode = "";
+    this.branchSecondPhoneWithCC = "";
+    this.branchLandLine = "";
+    this.branchLandLineCountryCodeName = "";
+    this.branchLandLineCountryCode = "";
+    this.branchLandLineWithCC = "";
+    this.branchAddressCurrent = "";
+  }
+  fillData(data) {
+    this.reservationToken = data.reservationToken;
+    this.reservationCode = data.reservationCode;
+    this.clientToken = data.clientToken;
+    this.clientNameCurrent = data.clientNameCurrent;
+    this.clientCode = data.clientCode;
+    this.clientBirthdate = data.clientBirthdate;
+    this.clientAgeCurrent = data.clientAgeCurrent;
+    this.clientPhone = data.clientPhone;
+    this.clientCountryCode = data.clientCountryCode;
+    this.clientPhoneWithCC = data.clientPhoneWithCC;
+    this.clientImagePath = data.clientImagePath;
+    this.insuranceCompanyToken = data.insuranceCompanyToken;
+    this.insuranceCompanyNameCurrent = data.insuranceCompanyNameCurrent;
+    this.branchToken = data.branchToken;
+    this.branchNameCurrent = data.branchNameCurrent;
+    this.employeeToken = data.employeeToken;
+    this.employeeNameCurrent = data.employeeNameCurrent;
+    this.employeeImagePath = data.employeeImagePath;
+    this.employeeCode = data.employeeCode;
+    this.employeeScientificDegreeToken = data.employeeScientificDegreeToken;
+    this.scientificDegreeNameCurrent = data.scientificDegreeNameCurrent;
+    this.jobToken = data.jobToken;
+    this.jobNameCurrent = data.jobNameCurrent;
+    this.timeNameCurrent = data.timeNameCurrent;
+    this.dayToken = data.dayToken;
+    this.dayNameCurrent = data.dayNameCurrent;
+    this.serviceTypeToken = data.serviceTypeToken;
+    this.serviceTypeNameCurrent = data.serviceTypeNameCurrent;
+    this.reservationDate = data.reservationDate;
+    this.serviceToken = data.serviceToken;
+    this.serviceNameCurrent = data.serviceNameCurrent;
+    this.serviceProvideTypeToken = data.serviceProvideTypeToken;
+    this.serviceProvideTypeNameCurrent = data.serviceProvideTypeNameCurrent;
+    this.generalSpecialtyToken = data.generalSpecialtyToken;
+    this.generalSpecialtyNameCurrent = data.generalSpecialtyNameCurrent;
+    this.specialSpecialtyToken = data.specialSpecialtyToken;
+    this.specialSpecialtyNameCurrent = data.specialSpecialtyNameCurrent;
+    this.branchFirstPhone = data.branchFirstPhone;
+    this.branchFirstNumberCountryCodeName =
+      data.branchFirstNumberCountryCodeName;
+    this.branchFirstNumberCountryCode = data.branchFirstNumberCountryCode;
+    this.branchFirstPhoneWithCC = data.branchFirstPhoneWithCC;
+    this.branchSecondPhone = data.branchSecondPhone;
+    this.branchSecondNumberCountryCodeName =
+      data.branchSecondNumberCountryCodeName;
+    this.branchSecondNumberCountryCode = data.branchSecondNumberCountryCode;
+    this.branchSecondPhoneWithCC = data.branchSecondPhoneWithCC;
+    this.branchLandLine = data.branchLandLine;
+    this.branchLandLineCountryCodeName = data.branchLandLineCountryCodeName;
+    this.branchLandLineCountryCode = data.branchLandLineCountryCode;
+    this.branchLandLineWithCC = data.branchLandLineWithCC;
+    this.branchAddressCurrent = data.branchAddressCurrent;
+  }
+}

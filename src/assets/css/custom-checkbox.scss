@@ -1,0 +1,72 @@
+.custom-checkbox-container {
+  margin-bottom: 10px;
+  .custom-control {
+    padding: 0 !important;
+    input[type="checkbox"],
+    input[type="radio"] {
+      // display: none;
+      appearance: none;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      min-width: 30px;
+      width: fit-content;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      user-select: none;
+      .checked,
+      .unchecked {
+        display: flex;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.5s;
+        svg {
+          position: absolute;
+        }
+      }
+      .checked {
+        border: 1px solid var(--color, #000000) !important;
+      }
+      .unchecked {
+        border: 1px solid var(--color, #000000) !important;
+      }
+      .text {
+        margin-inline-start: 28px;
+      }
+      &::after,
+      &::before {
+        appearance: none;
+        display: none;
+      }
+    }
+    input[type="checkbox"]:checked + label .checked {
+      opacity: 1;
+    }
+    input[type="checkbox"]:not(:checked) + label .unchecked {
+      opacity: 1;
+    }
+  }
+}
+
+.custom-checkbox-container.with-out-title .custom-control label {
+  .checked,
+  .unchecked {
+    top: 5px;
+  }
+}
+
+.check-box-center {
+  .custom-control {
+    label {
+      margin: 5px auto;
+    }
+  }
+}

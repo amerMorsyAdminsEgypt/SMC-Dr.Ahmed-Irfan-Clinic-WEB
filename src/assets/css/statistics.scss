@@ -1,0 +1,70 @@
+.statistics-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+@media only screen and (max-width: 960px) {
+  .statistics-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .statistics-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 560px) {
+  .statistics-cards {
+    grid-template-columns: 100%;
+  }
+}
+
+.chartjs,
+.statistics-card {
+  text-align: center;
+  box-shadow: 0px 0px 10px #0009;
+  padding: 1em;
+  border-radius: 1.5em;
+  margin-bottom: 2em;
+}
+
+.statistics-card {
+  text-align: initial;
+  display: grid;
+  grid-template-columns: 65% calc(100% - 65% - 1em);
+  grid-template-areas:
+    "content icon"
+    "bar bar";
+  grid-gap: 1em;
+  margin: initial;
+  text-align: center;
+  .statistics-card-content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .statistics-card-title {
+      color: #777;
+    }
+  }
+  .statistics-card-icon {
+    grid-area: icon;
+    img {
+      width: 100%;
+    }
+  }
+  .statistics-card-bar {
+    grid-area: bar;
+    .progress {
+      .progress-bar:nth-of-type(1) {
+        background-color: #00bf36;
+        color: #eee;
+      }
+      .progress-bar:nth-of-type(2) {
+        background-color:#e11919;
+        color: #eee;
+      }
+    }
+  }
+}

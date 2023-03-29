@@ -1,0 +1,65 @@
+:root {
+  --color-navbar: #159E93;
+  --color-navbar-shadow: #616161;
+  --color-sidebar: #0e776e;
+  --color-sidebar-sub-menu-active: #ffea00;
+  --color-nav-tabs-border: #0e776e;
+  
+  --color-top: #159E93;
+  --color-middel: #4f89c0;
+  --color-light: #979dac;
+  
+  --color-text-main: #212121;
+  --color-text-main-light: #7d8597;
+  --color-text-secondary: #ffffff;
+  --color-text-secondary-light: #cccccc;
+  
+  --color-bg-main: #ffffff;
+  --color-bg-main-opacity: #ffffff99;
+  --color-bg-secondary: #0e776e;
+  --color-bg-page-content: #ffffff;
+  --color-bg-footer: #159E93;
+  --color-footer-text: #f1e9e9;
+  --color-bg-collapse-actions: #afb6c7;
+  --color-bg-home-mission-vision: #0e776e;
+  --color-bg-home-footer: #0e776e;
+
+  --color-btn: #0e776e;
+  --color-btn-hover: #7d8597;
+  --color-bg-active-link: #d5e2ff;
+
+  --color-notification-title: #222;
+  --color-notification-description: #555;
+  --color-notification-date: #777;
+
+  --color-scroll: #919191;
+
+  /* #region reservation */
+  --color-bg-pending: #f77f00;
+  --color-bg-pending-op: #f77f0055;
+  --color-bg-current: #007200;
+  --color-bg-current-op: #00720055;
+  --color-bg-waitingApprovalCancel: #9a8c98;
+  --color-bg-waitingApprovalCancel-op: #9a8c9855;
+  --color-bg-canceledBeforeApproval: #ef233c;
+  --color-bg-canceledBeforeApproval-op: #ef233c55;
+  --color-bg-canceledAfterApproval: #161a1d;
+  --color-bg-canceledAfterApproval-op: #161a1d55;
+  --color-bg-attended: #ffd60a;
+  --color-bg-attended-op: #ffd60a55;
+  --color-bg-entered: #d00000;
+  --color-bg-entered-op: #d0000055;
+  --color-bg-waitingReEntry: #108b81;
+  --color-bg-waitingReEntry-op: #159E9355;
+  --color-bg-finished: #000000;
+  --color-bg-finished-op: #00000055;
+  /* #endregion reservation */
+
+  --color-black: #000000;
+  --color-red: #ff4747;
+  --color-green: #88ff88;
+  --color-yellow: #fbe059;
+  --color-orange: #fc9816;
+  --color-grey: #7e7e7e;
+  --color-white: #ffffff;
+}
